@@ -11,6 +11,10 @@ Vue.use(VueRouter);
 
 const routes = [
   {
+    path: "/",
+    redirect: "/about",
+  },
+  {
     path: "/about",
     name: "About",
     component: About,
@@ -30,13 +34,11 @@ const routes = [
     name: "Photo",
     component: Photo,
   },
-
   {
     path: "/contact",
     name: "Contact",
     component: Contact,
   },
-
   {
     path: "/product",
     name: "Product",
